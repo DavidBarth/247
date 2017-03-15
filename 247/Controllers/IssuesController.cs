@@ -38,9 +38,8 @@ namespace _247.Controllers
 
             };
 
-            List<Issue> issues = new List<Issue>();
-            issues.Add(testIssue);
-            issues.Add(testIssue2);
+            List<Issue> issues = new List<Issue>
+            { testIssue, testIssue2};
 
             return View(issues);
         }
